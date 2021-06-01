@@ -1,4 +1,4 @@
-@import "variables";
+@import "_variables";
 body {
   font-family: "Roboto", sans-serif !important;
   color: $primary-color;
@@ -69,6 +69,7 @@ body {
   }
 
   .section-0 {
+    background-color: $white;
     .nav-container {
       @media (min-width: $large-screen) {
         padding-left: 150px;
@@ -79,7 +80,7 @@ body {
 
   .section-1 {
     position: relative;
-    height: 60vh;
+    height: 66vh;
 
     .img-slider {
       position: absolute;
@@ -269,6 +270,20 @@ body {
       .bi-check-circle-fill {
         font-size: 23px;
         color: #6f759d;
+      }
+    }
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .sticky-top {
+      position: fixed;
+    }
+    .section-1 {
+      .slider-text {
+        transform: translateY(50%);
+        @media (min-width: $medium-screen) {
+          transform: translateY(75%);
+        }
       }
     }
   }

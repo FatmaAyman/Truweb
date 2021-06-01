@@ -1,1 +1,1 @@
-"# Truweb" 
+Truweb is a trufla landing page task (mobile first) using (HTML/CSS/SCSS).

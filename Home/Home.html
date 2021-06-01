@@ -4,15 +4,29 @@
     <title>TRUWEB</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.">
+
+    <!--meta for SEO-->
+    <meta name="description"
+        content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.">
+    <meta name="keywords" content="">
+
     <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/styles/Home.css">
+
+    <!--[if IE]>
+        <style>
+            .sticky-top {
+                position: fixed;
+            }
+        </style>
+        <![endif]-->
 </head>
 <body class="container-fluid p-0">
-    <section class=" section-0 container-fluid m-0">
+    <section class="section-0 container-fluid m-0 sticky-top">
         <div class="d-flex flex-column">
             <div>
                 <header>
@@ -52,8 +66,8 @@
 
 
     <section class="section-1 container-xl pb-5">
-        <div class="row img-slider">
-            <img class="p-0" src="../assets/images/hero img.jpg" alt="Hero image"/>
+        <div class="row img-slider" data-aos="zoom-in" data-aos-duration="2000">
+            <img class="p-0" src="../assets/images/hero img.jpg" alt="Hero image" />
         </div>
         <div class="container slider-text">
             <div class="row">
@@ -76,13 +90,14 @@
 
     <section class="section-2 container-xl gray">
         <div class="row p-0">
-            <div class="title text-center">
+            <div class="title text-center" data-aos="fade-down" data-aos-duration="500">
                 <h2>
                     Our Team
                 </h2>
             </div>
             <div class="row m-0 team-row">
-                <div class="col-sm-12 col-md-6 col-lg-4 pt-1">
+                <div class="col-sm-12 col-md-6 col-lg-4 pt-1" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                     <div class="card">
                         <img src="../assets/images/avatar.jpg" class="card-img-top" alt="Team avatar">
                         <div class="card-body text-center">
@@ -96,9 +111,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 pt-1">
+                <div class="col-sm-12 col-md-6 col-lg-4 pt-1" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                     <div class="card">
-                        <img src="../assets/images/avatar.jpg" class="card-img-top"  alt="Team avatar">
+                        <img src="../assets/images/avatar.jpg" class="card-img-top" alt="Team avatar">
                         <div class="card-body text-center">
                             <div class="card-text">
                                 <h3 class="fw-bold">Name</h3>
@@ -110,8 +126,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 pt-1">
-
+                <div class="col-sm-12 col-md-6 col-lg-4 pt-1" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                     <div class="card">
                         <img src="../assets/images/avatar.jpg" class="card-img-top" alt="Team avatar">
                         <div class="card-body text-center">
@@ -131,7 +147,7 @@
 
     <section class="section-3 container">
         <div class="row">
-            <div class="text-large mt-3">
+            <div class="text-large mt-3" data-aos="fade-down" data-aos-duration="500">
                 <h3>Heading</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
@@ -143,7 +159,7 @@
                     tempor incididunt ut labore et dolore magna aliqua.
                 </p>
             </div>
-            <div class="text-small mt-3">
+            <div class="text-small mt-3" data-aos="fade-down" data-aos-duration="500">
                 <h3>Heading</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
@@ -155,11 +171,21 @@
                     tempor incididunt ut labore et dolore magna aliqua.
                 </p>
 
-                <h5 class="something"><i class="bi bi-check-circle-fill"></i> Something goes here</h5>
-                <h5 class="something"><i class="bi bi-check-circle-fill"></i> Something goes here</h5>
-                <h5 class="something"><i class="bi bi-check-circle-fill"></i> Something goes here</h5>
+                <h5 class="something" data-aos="fade-down" data-aos-duration="500"><i
+                        class="bi bi-check-circle-fill"></i> Something goes here</h5>
+                <h5 class="something" data-aos="fade-down" data-aos-duration="500"><i
+                        class="bi bi-check-circle-fill"></i> Something goes here</h5>
+                <h5 class="something" data-aos="fade-down" data-aos-duration="500"><i
+                        class="bi bi-check-circle-fill"></i> Something goes here</h5>
             </div>
         </div>
     </section>
+
+
+    <!-- JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
